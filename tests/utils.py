@@ -315,7 +315,7 @@ def make_robot(robot_type: str, overrides: list[str] | None = None, mock=False) 
 
         # Explicitely add mock argument to the cameras and set it to true
         # TODO(rcadene, aliberts): redesign when we drop hydra
-        if robot_type in ["koch", "so100", "moss"]:
+        if robot_type in ["koch", "koch_k1", "so100", "moss"]:
             overrides.append("+leader_arms.main.mock=true")
             overrides.append("+follower_arms.main.mock=true")
             if "~cameras" not in overrides:

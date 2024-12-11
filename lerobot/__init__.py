@@ -196,6 +196,7 @@ available_policies = [
 # lists all available robots from `lerobot/common/robot_devices/robots`
 available_robots = [
     "koch",
+    "koch_k1",
     "koch_bimanual",
     "aloha",
     "so100",
